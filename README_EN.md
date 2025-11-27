@@ -30,7 +30,7 @@ Visit **[EMCP Platform](https://sit-emcp.kaleido.guru)** now to start your MCP j
 
 ## Introduction
 
-This is an automatically generated MCP server using [FastMCP](https://fastmcp.wiki) for accessing the Forexwala API.
+This is an MCP server for accessing the Forexwala API.
 
 - **PyPI Package**: `bach-forexwala`
 - **Version**: 1.0.0
@@ -108,8 +108,8 @@ export API_KEY="your_api_key_here"
 {
   "mcpServers": {
     "forexwala": {
-      "command": "python",
-      "args": ["E:\path\to\forexwala\server.py"],
+      "command": "uvx",
+      "args": ["--from", "bach-forexwala", "bach_forexwala"],
       "env": {
         "API_KEY": "your_api_key_here"
       }
